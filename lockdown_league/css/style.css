@@ -1,0 +1,96 @@
+/**:not(body):not(html):not(.container){
+    border: 1px solid black
+}*/
+
+*{
+    font-family: Lato, sans-serif;
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+section{
+    margin: 15px 0px;
+}
+
+#time{
+    margin: 0 auto;
+    max-width: 275px;
+}
+
+#time > *{
+    padding: 5px;
+}
+
+#time-remaining{
+    font-size: 42px;
+    font-weight: bold;
+}
+
+#docket .event{
+    margin: 2rem 2%;
+}
+
+#docket .event-icon{
+     width: 20%;
+     min-width: 90px;
+     max-width: 135px;
+     height: auto;
+     margin: 0px;
+}
+
+#docket .event-name, #docket .event-time, #docket .event-details{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#docket .event-name span, #docket .event-time span, #docket .event-details span{
+    display: inline-block;
+}
+
+#docket .event-name > span{
+    position: relative;
+    top: -4px;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    padding-top: 0px;
+}
+
+#docket .event-time > span{
+    position: relative;
+    top: -14px;
+
+    font-size: 18px;
+    font-style: italic;
+}
+
+#docket .event-details > span{
+    position: relative;
+    top: -6px;
+
+    font-size: 18px;
+}
+
+@media (min-width: 720px){
+
+}
+
+@media (min-width: 0px) and (max-width: 719px){
+    .event-icon{
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+

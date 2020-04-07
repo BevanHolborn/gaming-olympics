@@ -1,0 +1,25 @@
+{
+  "startTime": "10 April, 7pm",
+  "startDatetime": "10 April 2020 19:00:00 GMT+2",
+  "events":
+  [
+    {
+      "eventName": "Payday 2",
+      "eventTime": "7pm",
+      "eventDescription": "Sean teaches Bevan the ropes on Payday 2",
+      "eventIcon": "media/images/payday2.jpg"
+    },
+    {
+      "eventName": "Jackbox Games",
+      "eventTime": "8pm",
+      "eventDescription": "Good old Jackbox",
+      "eventIcon": "media/images/jackbox.png"
+    },
+    {
+      "eventName": "Zoom Hangout",
+      "eventTime": "9pm",
+      "eventDescription": "Private hangout on Zoom",
+      "eventIcon": "media/images/zoom.png"
+    }
+  ]
+}
