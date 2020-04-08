@@ -55,14 +55,14 @@ function INIT(data)
 
 function buildEvent(data)
 {
-    return `<div class="col-12 event">
+    return `<div class="col-9 event">
         <div class="row ">
             <div class="col-3 f-left event-icon">
                 <img src="${data.eventIcon}" alt="Event Icon">
             </div>
-            <div class="col-9 event-name"><span>${data.eventName}</span></div>
-            <div class="col-9 event-time"><span>${data.eventTime}</span></div>
-            <div class="col-9 event-details"><span>${data.eventDescription}</span></div>
+            <div class="col-7 event-name"><span>${data.eventName}</span></div>
+            <div class="event-time f-right"><span>${data.eventTime}</span></div>
+            <div class="col-7 event-details"><span>${data.eventDescription}</span></div>
         </div>
     </div>`
 }

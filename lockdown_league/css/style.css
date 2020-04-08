@@ -4,11 +4,16 @@
 
 *{
     font-family: Lato, sans-serif;
+    color: #d1d1d1;
 }
 
 html, body{
     margin: 0px;
     padding: 0px;
+}
+
+body{
+    background: repeating-linear-gradient( -45deg, #1c1b21 -8px, #001015 11px, #315857 6px, #202c2d 11px, #100840 12px);
 }
 
 img{
@@ -34,16 +39,30 @@ section{
     font-weight: bold;
 }
 
+#docket{
+    margin-bottom: 0px;
+}
+
 #docket .event{
-    margin: 2rem 2%;
+    margin: 1rem 2%;
+    /*background-color: #0c031b;*/
+    border-radius: 9px;
+    backdrop-filter: blur(-10px);
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #docket .event-icon{
-     width: 20%;
-     min-width: 90px;
-     max-width: 135px;
-     height: auto;
-     margin: 0px;
+    width: 20%;
+    min-width: 90px;
+    max-width: 135px;
+    height: auto;
+    margin: 0px;
+    padding: 10px;
+    background-color: #8ba6bf;
+    border-radius: 10px;
 }
 
 #docket .event-name, #docket .event-time, #docket .event-details{
@@ -62,15 +81,29 @@ section{
     font-size: 24px;
     font-weight: bold;
 
-    padding-top: 0px;
+    padding-top: 10px;
+}
+
+#docket .event-time{
+    margin: 0px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(65, 149, 168, 0.77);
+    height: 35%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1px 8px;
 }
 
 #docket .event-time > span{
-    position: relative;
-    top: -14px;
-
-    font-size: 18px;
+    font-size: 28px;
     font-style: italic;
+    font-weight: bold;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #docket .event-details > span{
@@ -78,6 +111,9 @@ section{
     top: -6px;
 
     font-size: 18px;
+
+    padding-bottom: 10px;
+    padding-right: 10px;
 }
 
 @media (min-width: 720px){
@@ -85,11 +121,27 @@ section{
 }
 
 @media (min-width: 0px) and (max-width: 719px){
-    .event-icon{
+    #docket .event-time {
         display: inline-block;
+        width: 27px;
+        margin: 0px;
+        position: absolute;
+        left: 118px;
+        top: 0px;
+        background-color: rgba(65, 149, 168, 0.77);
+        height: 9%;
+        border-radius: 10px;
+        text-align: center;
+        padding: 1px 8px;
+    }
+
+    #docket .event-time > span {
+        font-size: 14px;
+        font-style: italic;
+        font-weight: bold;
         position: relative;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 50%;
+        transform: translateY(-60%);
     }
 }
 
