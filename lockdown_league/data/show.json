@@ -6,19 +6,19 @@
     {
       "eventName": "Payday 2",
       "eventTime": "7pm",
-      "eventDescription": "Get paid!",
+      "eventDescription": "Sean shows Bevan than ropes in Payday 2.",
       "eventIcon": "media/images/payday2.jpg"
     },
     {
       "eventName": "Jackbox Games",
       "eventTime": "8pm",
-      "eventDescription": "Good old Jackbox",
+      "eventDescription": "Good old Jackbox games for everyone.",
       "eventIcon": "media/images/jackbox.png"
     },
     {
-      "eventName": "Zoom Hangout",
+      "eventName": "Discord Hangout",
       "eventTime": "9pm",
-      "eventDescription": "Private hangout on Zoom",
+      "eventDescription": "Hangout and catchup on Discord",
       "eventIcon": "media/images/zoom.png"
     }
   ]
