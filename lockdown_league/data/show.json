@@ -6,7 +6,7 @@
     {
       "eventName": "Payday 2",
       "eventTime": "7pm",
-      "eventDescription": "Sean shows Bevan than ropes in Payday 2.",
+      "eventDescription": "Sean shows Bevan the ropes in Payday 2.",
       "eventIcon": "media/images/payday2.jpg"
     },
     {
@@ -18,7 +18,7 @@
     {
       "eventName": "Discord Hangout",
       "eventTime": "9pm",
-      "eventDescription": "Hangout and catchup on Discord",
+      "eventDescription": "Hangout and catchup on Discord.",
       "eventIcon": "media/images/discord.png"
     }
   ]
