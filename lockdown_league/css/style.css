@@ -25,6 +25,11 @@ section{
     margin: 15px 0px;
 }
 
+#header img{
+    width: 8rem;
+    height: auto;
+}
+
 #time{
     margin: 0 auto;
     max-width: 275px;
@@ -61,7 +66,7 @@ section{
     height: auto;
     margin: 0px;
     padding: 10px;
-    background-color: #8ba6bf;
+    background-color: #377988;
     border-radius: 10px;
 }
 
@@ -89,7 +94,7 @@ section{
     position: absolute;
     right: 0px;
     bottom: 0px;
-    background-color: rgba(65, 149, 168, 0.77);
+    background-color: #377988;
     height: 35%;
     border-radius: 10px;
     text-align: center;
