@@ -34,7 +34,8 @@ function INIT(data)
         if(hours == "00" && minutes == "00" && seconds == "00")
         {
             text = "Live Now";
-            clearInterval(timer)
+            clearInterval(timer);
+            document.querySelectorAll("#live-time")[0].innerHTML = "<a target='_blank' href='https://www.youtube.com/channel/UCwmgGExd33f6MquSxUNOX6Q'>Watch Here</a>"
         }
         else text = hours + ":" + minutes + ":" + seconds;
 
