@@ -7,11 +7,6 @@
     color: #d1d1d1;
 }
 
-html, body{
-    margin: 0px;
-    padding: 0px;
-}
-
 body{
     background: repeating-linear-gradient( -45deg, #1c1b21 -8px, #001015 11px, #315857 6px, #202c2d 11px, #100840 12px);
 }

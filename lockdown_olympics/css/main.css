@@ -1,0 +1,47 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Istok';
+    src: url('fonts/IstokWeb-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Istok';
+    src: url('fonts/IstokWeb-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.f-left{
+    float: left;
+}
+
+.f-right{
+    float: right;
+}

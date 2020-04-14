@@ -1,3 +1,8 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
 @font-face {
     font-family: 'Source Sans Pro';
     src: url('fonts/SourceSansPro-BlackItalic.ttf') format('truetype');

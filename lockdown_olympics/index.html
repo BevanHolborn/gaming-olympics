@@ -5,11 +5,91 @@
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Lockdown Olympics</title>
 
-        <link rel="stylesheet" href="vendor/simple-grid/simple-grid.css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+
+	<link rel="icon" href="media/images/favicon.png" type="image/png"/>
+        <title>Lockdown Olympics</title>
     </head>
     <body>
+        <nav id="page-nav">
+            <ul class="nav-main">
+                <li class="focus"><a href="#standings-overall">Overview</a></li>
+                <li>
+                    <ul class="nav-secondary">
+                        <li><a class="focus" href="#standings">Points</a></li>
+                        <li><a href="#medals">Medals</a></li>
+                    </ul>
+                </li>
+                <li><a href="#standings-games">Games</a></li>
+                <li id="nav-games">
+                    <ul class="nav-secondary">
+                    </ul>
+                </li>
+                <li><a href="#standings-tables">Tables</a></li>
+                <li id="nav-matches">
+                    <ul class="nav-secondary">
+                        <li><a href="#table-matches">Matches</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
+        <main>
+            <h1 id="title">Lockdown Olympics</h1>
+
+            <section id="addGame">
+                <div>
+                    We played a game of <br class="add-mobile-yes"/> <select id="game-input"></select>.
+                    <div id="players">
+                    </div>
+                    <div id="add-player">+</div>
+                    <br/>
+                    <input type="button" id="submit" value="Save match">
+                </div>
+            </section>
+
+            <section class="nav-h1" data-nav-point-name="Overview" id="standings-overall">
+                <h2>Overview</h2>
+                <div id="standings" class="graph-container nav-point nav-h2" data-nav-point-name="Points">
+                    <h3 class="standings-points-heading">Points</h3>
+                    <canvas></canvas>
+                </div>
+                <div id="medals" class="graph-container nav-point nav-h2" data-nav-point-name="Medals">
+                    <h3 class="standings-medals-heading">Medals</h3>
+                    <canvas></canvas>
+                </div>
+            </section>
+
+            <section id="standings-games" class="nav-h1" data-nav-point-name="Games">
+                <h2>Games</h2>
+            </section>
+
+            <section id="standings-tables" class="nav-h1" data-nav-point-name="Tables">
+                <h2>Tables</h2>
+                <div id="table-matches" class="nav-point nav-h2 graph-container" data-nav-point-name="Matches">
+                    <h3 class="table-matches-heading">Matches</h3>
+                    <table id="matches">
+                        <thead>
+                            <tr>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <script src="vendor/chart.min.js"></script>
+        <script src="js/requests.js"></script>
+        <script src="js/graph.js"></script>
+        <script src="js/io.js"></script>
+        <script src="js/olympics.js"></script>
+        <script src="js/nav.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

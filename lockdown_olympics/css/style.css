@@ -1,0 +1,318 @@
+*{
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Istok, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+section > h2{
+    width: 65%;
+    display: inline-block;
+}
+
+nav{
+    display: inline-block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    padding: 20px;
+    margin: 25px 50px;
+}
+
+nav .focus{
+    font-weight: bold;
+}
+
+nav a, nav a:hover, nav a:focus, nav a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.nav-main > li{
+    font-family: Istok, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+ul.nav-main > li:not(:nth-child(2n)){
+    margin-top: 15px;
+}
+
+ul.nav-secondary > li{
+    font-family: Istok, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+#title{
+    margin-top: 75px;
+    font-size: 42px;
+    display: inline-block;
+    margin-left: 25px;
+    /*position: relative;
+    left: 50%;
+    transform: translateX(-50%);*/
+}
+
+main{
+    position: relative;
+    left: 200px;
+    width: 70%;
+    margin: 0 auto;
+    min-width: 320px;
+}
+
+#addGame{
+    width: 65%;
+    margin: 75px 0px 75px 25px;
+    padding: 0px 0px 25px 0px;
+    border-bottom: 2px solid rgba(128,128,128,0.25);
+}
+
+#addGame *{
+    font-size: 18px;
+}
+
+#addGame select, #addGame option{
+    display: inline-block;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+#addGame #add-player{
+    cursor: pointer;
+    display: inline-block;
+    padding: 0px 11px 2px 11px;
+    font-size: 24px;
+    background-color: rgba(128,255,86,0.2);
+    border: 1px solid rgb(128,255,86);
+    border-radius: 50px;
+    margin: 7px 0px 15px 0px;
+}
+
+#addGame .remove-player{
+    cursor: pointer;
+    display: inline-block;
+    padding: 0px 15px 5px 14px;
+    font-size: 24px;
+    background-color: rgba(255, 44, 49, 0.2);
+    border: 1px solid rgb(255, 39, 44);
+    border-radius: 30px;
+    margin-left: 15px;
+}
+
+#addGame .player{
+    padding: 5px 0px;
+}
+
+#addGame #submit{
+    cursor: pointer;
+    outline: none;
+    border: 1px solid rgb(129, 255, 89);
+    background-color: transparent;
+    box-shadow: none;
+    padding: 8px;
+
+    transition: 0.25s ease-in-out;
+}
+
+#addGame #submit:hover{
+    background-color: rgba(129, 255, 89,0.45);
+}
+
+#standings-overall > .graph-container{
+    display: inline-block;
+    width: 65%;
+    padding: 25px;
+}
+
+#standings-tables > .graph-container{
+    display: inline-block;
+    width: 65%;
+    padding: 25px;
+}
+
+#standings-tables table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#standings-tables table th, #standings-tables table td{
+    padding: 7px 12px;
+}
+
+#standings-tables table th{
+    text-align: left;
+}
+
+#standings-tables table td{
+    text-align: right;
+}
+
+#standings-tables table tbody tr:nth-child(even){
+    background-color: #dfdfdf;
+}
+
+#standings-games > .graph-container{
+    display: inline-block;
+    width: 65%;
+    padding: 25px;
+}
+
+.add-mobile-no{
+    display: initial;
+}
+
+.add-mobile-yes{
+    display: none;
+}
+
+@media (min-width: 625px) and (max-width: 1024px){
+    nav{
+        display: none;
+    }
+
+    body > main{
+        margin: 0 auto;
+        position: initial;
+        width: 95%;
+    }
+
+    body > main > *, body > main > * > *{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #title{
+        margin-left: 0px;
+    }
+
+    #addGame{
+        width: 85%;
+        margin-left: 0px;
+    }
+
+    #standings-overall > .graph-container, #standings-games > .graph-container, section > h2, #standings-tables > .graph-container{
+        padding: 5px;
+        width: 90%;
+    }
+}
+
+@media (min-width: 445px) and (max-width: 624px){
+    nav{
+        display: none;
+    }
+
+    body > main{
+        margin: 0 auto;
+        position: initial;
+        width: 95%;
+    }
+
+    body > main > *, body > main > * > *{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #title{
+        margin-left: 0px;
+    }
+
+    #addGame{
+        width: 90%;
+        margin-left: 0px;
+    }
+
+    #standings-overall > .graph-container, #standings-games > .graph-container, section > h2, #standings-tables > .graph-container{
+        padding: 5px;
+        width: 98%;
+    }
+
+    .add-mobile-yes{
+        display: initial;
+    }
+
+    .add-mobile-no{
+        display: none;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 444px){
+    nav{
+        display: none;
+    }
+
+    body > main{
+        margin: 0 auto;
+        position: initial;
+        width: 95%;
+    }
+
+    body > main > *, body > main > * > *{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #title{
+        margin-left: 0px;
+        display: block;
+        text-align: center;
+    }
+
+    #addGame{
+        width: 95%;
+        margin-left: 0px;
+    }
+
+    #standings-overall > .graph-container, #standings-games > .graph-container, section > h2, #standings-tables > .graph-container{
+        padding: 5px;
+        width: 98%;
+    }
+
+    #standings-tables > div{
+        overflow-x: scroll;
+    }
+
+    .add-mobile-yes{
+        display: initial;
+    }
+
+    .add-mobile-no{
+        display: none;
+    }
+}
+
+/*
+Mobile, portrait
+320px	iPhone SE
+375px	iPhone 6, 7, 8, X
+414px	iPhone 8 Plus
+
+Tablet, portrait
+768px	iPad Air, iPad Mini, iPad Pro 9"
+834px	iPad Pro 10"
+
+Laptop displays
+1366px	HD laptops (768p)
+1366px	iPad Pro 12" (landscape)
+1440px	13" MacBook Pro (2x scaling)
+
+Desktop displays
+1680px	13" MacBook Pro (1.5x scaling)
+1920px	1080p displays*/
